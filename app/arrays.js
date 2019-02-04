@@ -42,6 +42,13 @@ arraysAnswers = {
     });
   },
 
+  /**
+   * Return the same instance array with the same items as arr, excluding item
+   *
+   * @param {Number[]} arr - An array of numbers
+   * @param {Number} item - A number to be excluded from the new array
+   * @returns {Number[]} Same instance array containing all numbers from arr except item.
+   */
   removeWithoutCopy: function removeWithoutCopy(arr, item) {
     while (arr.indexOf(item) !== -1) {
       arr.splice(arr.indexOf(item), 1);
